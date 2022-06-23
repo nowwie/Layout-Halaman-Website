@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="tlk">
+            <img src="https://ppdb.smktelkom-mlg.sch.id/assets/home/img/logo_putih.png" width="200">
+        </div>
+        <div class="wrapper">
+        <div class="logo"><a href="home.html">KELOMPOK TEFA</a></div>
+        <div class="logoTelkom">SMK TELKOM MALANG</div>
+            <div class="menu" >
+                <ul>
+                    <li><a href="home.html" >Home</a></li >
+                    <li><a href="profile.html" >Profile</a></li>
+                    <li><a href="contact.html"class="tbl-biru">Contact</a></li>   
+                </ul>
+            </div>
+        </div> 
+         
+    </nav>
+
+    
+            <div class="gambar">
+                <section>
+                    <img  src="" alt="">
+                </section>
+          
+        
+        <div class="kepala">
+            <h1>inputkan data anda</h1>
+        
+
+
+      
+            <form>
+              <label for="nama_depan">Nama </label>
+              <input type="text" id="nama_depan" name="nama_depan" placeholder="Nama" required >
+              <label for="email">masukkan email</label>
+              <input type="text" id="email" name="masukkan email" placeholder="e-mail" required >
+          
+              <label for="negara">Negara</label>
+              <input type="text" id="Negara" name="negara" placeholder="negara" required>
+              <input type="button" value="submit" id="submit">
+            </form>
+
+            <p id="result"></p>
+
+          
+            
+            <script>
+
+                const nama = document.getElementById("nama_depan");
+                const email = document.getElementById("email");
+                const negara = document.getElementById("Negara");
+                const result = document.getElementById("result");
+                const submit = document.getElementById("submit")
+
+                submit.addEventListener("click", function(){
+                    let rNama = nama.value;
+                    let rEmail = email.value;
+                     let rNegara = negara.value;
+                    
+                     result.innerHTML = rNama + " " + rEmail + " " + rNegara;
+                })
+
+
+            </script>
+            
+          </div>
+
+    
+</body>
+</html>
